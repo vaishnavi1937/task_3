@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #1f3b5b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#themeBtn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav {
+    background: #35679a;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li {
+    margin: 8px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+article {
+    margin-top: 20px;
+    padding-left: 15px;
+    border-left: 4px solid #35679a;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#msg {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    background: #1f3b5b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode section {
+    background: #333;
+    color: white;
+}
+
+.dark-mode nav {
+    background: #111;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background: #000;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
